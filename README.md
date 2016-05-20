@@ -9,6 +9,10 @@ Porém, meus valores não bateram com o do site. Pela "Visualização Analítica
 
 Então, tive a ideia de desenvolver um programa em Python para jogaria os valores no site para baixar os resultados.
 
+A data final sempre será **30/04/2016**, os juros sempre serão **1,00 %**. As únicas variáveis serão a data inicial, e o Valor.
+
+No resultado, só precisa pegar o **Valor Atualizado, Valor dos juros** e **Total geral**.
+
 ##EX:
 
 Na coluna da **Correção Monetária**:
