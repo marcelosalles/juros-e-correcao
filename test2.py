@@ -1,7 +1,7 @@
 import requests
 
-r = requests.post("http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/Controller?sessionId=A3AE5A4568FF94EF79D2BF285FCD8642", 
-                  data={'acao':'calcular',
+url = "http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/Controller?sessionId=A3AE5A4568FF94EF79D2BF285FCD8642"
+data = {'acao':'calcular',
           'valor':'R$ 500,00',
           'valorINI':'01/10/1999',
           'valorFIM':'30/04/2016',
@@ -14,7 +14,7 @@ r = requests.post("http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/Controller?ses
           'visualizacao':'S',
           'button':'Calcular',
           'button':'Calcular'
-          })
-
+          }
+r = requests.post(url, data)
 
 print(r.text) 

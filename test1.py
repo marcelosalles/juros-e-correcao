@@ -1,8 +1,6 @@
 import urllib
 import urllib2
 
-# http://wpscholar.com/blog/view-form-data-in-chrome/
-
 # url = 'http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/calculo.jsp?sessionId=5B545D5776C96BEE939B51C51722CF9D'
 url = 'http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/Controller?sessionId=A3AE5A4568FF94EF79D2BF285FCD8642'
 
