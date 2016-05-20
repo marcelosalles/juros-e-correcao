@@ -26,3 +26,9 @@ Na Coluna dos **Juros**:
   - Até: *30/04/2016*
 
 Os outros valores podem ficara em branco.
+
+##Referência:
+
+http://wpscholar.com/blog/view-form-data-in-chrome/
+http://stackoverflow.com/questions/4979638/python-simple-post-method
+http://stackoverflow.com/questions/11322430/python-how-to-send-post-request
