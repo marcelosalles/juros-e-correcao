@@ -62,7 +62,9 @@ Segundo esse [link](https://developers.google.com/analytics/devguides/collection
 É na verdade a linha `<meta http-equiv="refresh" content="0;url=/AtualizacaoMonetaria/calculo.jsp?sessionId=EB0CBDE0266CA0B016823B2BF8264BF0#msg">` que redireciona o usuário para outra página.
 
 O problema persiste pois seguindo esse link, caímos novamente na página principal. Minha hipótese é de que parte da requisição não está explícita, e que devemos debugar e montar a requisição da forma correta.
-Provavelmente a informação adicional está contida em cookies, tendo em vista que o debug de rede do chrome aponta a utilização de um cookies tanto na hora da submissão da requisição POST quanto no recebimento da página com os resultados.
+Provavelmente a informação adicional está contida em cookies, tendo em vista que o debug de rede do chrome aponta a utilização de um cookies tanto na hora da submissão da requisição POST quanto no recebimento da página com os resultados:
+
+![request_cookies](http://i.imgur.com/xTNlgxR.png)
 
 ##Referência:
 
