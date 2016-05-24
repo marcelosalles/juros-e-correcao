@@ -63,3 +63,7 @@ A partir da análise feita via navegador Chrome, parece que o site recebe a requ
 - http://wpscholar.com/blog/view-form-data-in-chrome/
 - http://stackoverflow.com/questions/4979638/python-simple-post-method
 - http://stackoverflow.com/questions/11322430/python-how-to-send-post-request
+
+## 24/05
+Não consegui avançar muita coisa, mas acho que essa bibilioteca do Google pode ajudar:
+https://cloud.google.com/appengine/docs/python/google-analytics#sample_source_code
