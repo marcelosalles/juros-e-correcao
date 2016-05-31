@@ -72,6 +72,13 @@ Essa análise evidenciou a utilização de cookies, tanto na hora da submissão 
 Infelizmente a simples adição de uma cópia do cookie gerado pela página não gerou o resultado esperado, portanto deve-se estudar o resto do 
 [cabeçalho da requisição http](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields) para tentar gerar uma requisição correta e obter os dados desejados.
 
+##Imagens:
+
+Primeira requisição POST:
+![post](http://i.imgur.com/OXpvdYK.png)
+
+Após redirecionamentos, requisição get que gera página com resultados:
+![get](http://i.imgur.com/vKv2SMF.png)
 
 ##Referência:
 
