@@ -61,12 +61,17 @@ A partir da análise feita via navegador Chrome, parece que o site recebe a requ
 Segundo esse [link](https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced?hl=pt-Br#snippetReference), esse código do google analytics não parece fazer muita coisa.
 É na verdade a linha `<meta http-equiv="refresh" content="0;url=/AtualizacaoMonetaria/calculo.jsp?sessionId=EB0CBDE0266CA0B016823B2BF8264BF0#msg">` que redireciona o usuário para outra página.
 
-O problema persiste pois seguindo esse link, caímos novamente na página principal. Uma hipótese é de que parte da requisição não está explícita, e que devemos debugar e montar a requisição da forma correta.
-Provavelmente a informação adicional está contida em cookies, tendo em vista que o debug de rede do chrome aponta a utilização de um cookies tanto na hora da submissão da requisição POST quanto no recebimento da página com os resultados:
+O problema persiste pois seguindo esse link, caímos novamente na página principal. Uma hipótese é de que a requisição não está completa e/ou correta, e portanto deve-se debugar para montar uma requisição válida. Podemos estudar a troca de dados entre cliente e servidor pelo navegador Chrome da seguinte forma:
+
+![chrome_network](http://wpscholar.com/content/uploads/2015/07/chrome-view-post-data.gif)
+
+Essa análise evidenciou a utilização de cookies, tanto na hora da submissão da requisição POST quanto no recebimento da página com os resultados:
 
 ![request_cookies](http://i.imgur.com/xTNlgxR.png)
 
-Um possível caminho para resolver o problema é estudar a troca de informações (através desse [método](http://wpscholar.com/blog/view-form-data-in-chrome/)) entre cliente e servidor e construir corretamente o [cabeçalho da requisição http](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields).
+Infelizmente a simples adição de uma cópia do cookie gerado pela página não gerou o resultado esperado, portanto deve-se estudar o resto do 
+[cabeçalho da requisição http](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields) para tentar gerar uma requisição correta e obter os dados desejados.
+
 
 ##Referência:
 
