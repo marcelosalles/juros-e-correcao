@@ -77,7 +77,7 @@ Infelizmente a simples adição de uma cópia do cookie gerado pela página não
 Primeira requisição POST:
 ![post](http://i.imgur.com/OXpvdYK.png)
 
-Após redirecionamentos, requisição get que gera página com resultados:
+Após redirecionamentos, requisição GET que gera página com resultados:
 ![get](http://i.imgur.com/vKv2SMF.png)
 
 ##Referência:
