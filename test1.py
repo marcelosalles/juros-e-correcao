@@ -2,6 +2,7 @@ import urllib
 import urllib2
 
 # url = 'http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/calculo.jsp?sessionId=5B545D5776C96BEE939B51C51722CF9D'
+# url = 'http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/calculo.jsp?sessionId=E286AA362AB511E888F3A474B72ED686#msg'
 url = 'http://cgjweb.tjsc.jus.br/AtualizacaoMonetaria/Controller?sessionId=A3AE5A4568FF94EF79D2BF285FCD8642'
 
 values = {'acao':'calcular',
@@ -24,8 +25,8 @@ req = urllib2.Request(url, data)
 response = urllib2.urlopen(req)
 the_page = response.read()
 
-# html_file = open('page.html', 'w')
-# html_file.write(the_page)
-# html_file.close()
+html_file = open('page.html', 'w')
+html_file.write(the_page)
+html_file.close()
 
 print(the_page)
