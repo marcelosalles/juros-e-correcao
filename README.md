@@ -72,6 +72,12 @@ Essa análise evidenciou a utilização de cookies, tanto na hora da submissão 
 Infelizmente a simples adição de uma cópia do cookie gerado pela página não gerou o resultado esperado, portanto deve-se estudar o resto do 
 [cabeçalho da requisição http](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields) para tentar gerar uma requisição correta e obter os dados desejados.
 
+Após utilizar o cookie retornado pela primeira requisição ao invés de criar um estático, o programa finalmente foi capaz de criar uma requisição válida e a página retornada continha os resultados esperados.
+
+Para a digestão dos dados recebidos, foi utilizada a biblioteca [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/), que permite fazer buscas no código html através de atributos específicos.
+
+Agora basta modificar o programa para gerar requisições com base em uma lista pré-definida para gerar resultados de forma rápida e automática! :)
+
 ##Imagens:
 
 Primeira requisição POST:
